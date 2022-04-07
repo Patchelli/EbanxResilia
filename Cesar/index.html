@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" type="imagem/png" href="./images/icons8-cadeado-2-24.png" />
+    <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+    <header>
+    </header>
+    <article>
+        <form>
+            <input type="radio"  onclick="meuMenuToggle()" id="codCeasar" name="cod"checked value="1">
+            <label for="cod">Caesar</label>
+            <input type="radio" id="codBase" name="cod"  value="2" >
+            <label for="cod">Base64</label>
+            <textarea required id="txt" placeholder="Digite seu texto:"></textarea>
+            <label class="chave-label" >Chave: <input type="number" placeholder="nº" id="chave" required /></label>
+            <input type="radio" id="op" name="op"checked value="1">
+            <label for="op">Codificar</label>
+            <input type="radio" id="op" name="op"  value="2"  >
+            <label for="op">Decodificar</label>
+            <div class="clear">
+                <label for="" id="clear">Limpar</label>
+            </div>
+            </br><button id="btn-enviar">Codificar</button>
+        </form>
+    </article>
+    <script src="/js/index.js"></script>
+    
+</body>
+</html>

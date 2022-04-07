@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(133, 63%, 47%);
+  background-image: url("/images/cesar.jpg");
+
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+h1 {
+  padding: 5px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: normal;
+}
+
+header {
+  width: auto;
+  height: 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.title {
+  display: inline-block;
+  text-align: center;
+  font-size: 4em;
+  color: white;
+  font-family: Ruda;
+}
+
+.tooltip {
+  display: inline-block;
+  font-size: 2em;
+  color: white;
+  cursor: pointer;
+}
+
+.tooltip .tooltip-text {
+  visibility: hidden;
+  width: 520px;
+  background-color: rgb(255, 255, 255);
+  opacity: 0.9;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  text-align: left;
+  border-radius: 6px;
+  padding: 20px 20px;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+}
+
+
+
+form {
+  text-align: center;
+  padding: 50px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: white;
+}
+
+#txt {
+  box-align: center;
+  display: block;
+  width: 300px;
+  height: 100px;
+  padding: 5px;
+  font-size: 20px;
+  color: whitesmoke;
+  border: 3px solid gray;
+  background: rgb(0, 0, 0);
+  margin: 0 auto;
+  resize: none;
+  outline: none;
+  cursor: text;
+}
+
+.chave-label {
+  font-size: 18px;
+}
+
+#chave {
+  text-align: center;
+  color: aquamarine;
+  width: 40px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  background-color: aquamarine;
+  border: 3px solid aquamarine;
+  outline: none;
+}
+
+::selection,
+input::placeholder {
+  background: aquamarine;
+  color: rgb(57, 62, 65);
+}
+
+#option {
+  width: 100px;
+  padding: 5px;
+  font-size: 15px;
+  background-color: aquamarine;
+  border: 3px solid aquamarine;
+  outline: none;
+}
+
+#option:hover {
+  color: aquamarine;
+  background-color: rgb(57, 62, 65);
+  border: 3px solid aquamarine;
+  outline: none;
+
+}
+
+#clear {
+  padding-top: 5px;
+  cursor: pointer;
+  width: 35px;
+}
+
+#btn-enviar {
+  width: 100px;
+  height: 50px;
+  margin-top: 50px;
+  font-size: 20px;
+  background: rgb(255, 255, 255);
+  color: rgb(28, 204, 48);
+  border: 3px solid aquamarine;
+  outline: none;
+  -webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+  -moz-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+  box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+
+}
+
+#btn-enviar:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(57, 62, 65);
+  border: solid rgb(131, 125, 124);
+}

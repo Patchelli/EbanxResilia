@@ -1,3 +1,4 @@
+let i = []
 let perguntas = [
   {
     idPeergunta: 1,
@@ -6,6 +7,7 @@ let perguntas = [
     respostaCerta: "sim",
     peso: 2,
     tipo: "Tech",
+    resposta: "",
     difficulty: "easy",
   },
   {
@@ -15,6 +17,7 @@ let perguntas = [
     respostaCerta: "b",
     peso: 8,
     tipo: "Tech",
+    resposta: "",
     difficulty: "hard",
   },
   {
@@ -32,10 +35,20 @@ let perguntas = [
     respostaCerta: "sim",
     peso: 2,
     tipo: "Soft",
+    resposta: "",
+    difficulty: "hard",
+  },
+  {
+    idPeergunta: 5,
+    pergunta: "Professor está ",
+    respostaCerta: "sim",
+    peso: 2,
+    tipo: "Soft",
+    resposta: "",
     difficulty: "hard",
   },
 ];
-
+setTimeout(() => {
 const maxQuestions = 3; // máximo de questões
 var numberQuestion = new Array(maxQuestions);
 var questions = new Array();
@@ -49,17 +62,20 @@ function createNumberQuestion() {
 }
 // Prencher o array com as questões
 function createQuestion(list) {
-  for (var i = 0; i <= numberQuestion.length; i++) {
+  for (var i = 0; i < numberQuestion.length; i++) {
     questions.push(Math.round(Math.random() * 3));
   }
   return questions;
 }
+console.log(questions)
 
 var result = createQuestion(createNumberQuestion());
 
+var contador = 0;
+var peso = 0;
 //percorrer o array Result e printar cada pergunta na tela
-for (var i = 0; i < maxQuestions; i++) {
-  var reposta = prompt(perguntas[result[i]].pergunta);
+for (var i = 0; i <= maxQuestions; i++) {
+  var reposta = prompt("Dificuldade : " + perguntas[result[i]].difficulty + "\n" + perguntas[result[i]].pergunta);
   if (reposta == perguntas[result[i]].respostaCerta) {
     contador += peso;
   } else {
@@ -73,4 +89,4 @@ for (var i = 0; i < maxQuestions; i++) {
   }
 }
 
-// console.log(createQuestion((createNumberQuestion())));
+}, 200);
