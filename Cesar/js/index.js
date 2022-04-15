@@ -85,3 +85,4 @@ function Decodificar(offset, str) {
 //   incrementar.innerHTML = `<label> forneça incremento cifra </label>
 // <input id="texto1" type="number">`   
 // })
+id != '' && newSrc != '' && newSrc != 'invalidUrl'?img.src = newSrc:"";

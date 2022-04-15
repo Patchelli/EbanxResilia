@@ -1,0 +1,71 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(/img/introduction-visual.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#title {
+    
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 50px;
+    color: #57096C;
+}
+.author{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 50px;
+    color: #e8e6e9;
+}
+
+.description {
+    font-family: Roboto;
+    font-size:20px;
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+}
+.img{
+    
+}
+#data {
+    text-align: center;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: bold;
+    border: black solid 5px;
+    
+}
+
+#parte-data {
+   display:flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 50px;
+   margin-bottom: 20px;
+
+}
+
+#search{
+    width: 70px;
+    height: 50px;
+}
+
+
+img{
+    width: 500px;
+    height:500px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
